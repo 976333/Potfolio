@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaitanya Dusane - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+    
+    <!-- Cursor Follower -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home" class="logo-3d">Chaitanya Dusane</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#resume" class="nav-link">Resume</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg-animation"></div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+            <div class="shape shape-6"></div>
+        </div>
+        
+        <!-- Hero Grid Layout -->
+        <div class="hero-container">
+            <div class="hero-grid">
+                <!-- Left Side - Main Content -->
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        Available for work
+                    </div>
+                    
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span class="title-line">Hello, I'm</span>
+                            <span class="name-highlight">Chaitanya Dusane</span>
+                            <span class="title-line">Creative Developer</span>
+                        </h1>
+                        
+                        <div class="typing-container">
+                            <span class="typing-prefix">I specialize in </span> 
+                            <span class="typing-text" id="typing-text"></span>
+                            <span class="cursor-blink">|</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary btn-3d">
+                            <span>View My Work</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary btn-3d">
+                            <span>Let's Talk</span>
+                            <i class="fas fa-comments"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">Batch 2026</div>
+                            <div class="stat-label">Fresher</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Side - Visual Elements -->
+                <div class="hero-visual">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <div class="window-controls">
+                                <span class="control red"></span>
+                                <span class="control yellow"></span>
+                                <span class="control green"></span>
+                            </div>
+                            <div class="window-title">portfolio.js</div>
+                        </div>
+                        <div class="code-content">
+                            <div class="code-line">
+                                <span class="line-number">1</span>
+                                <span class="code-text">
+                                    <span class="keyword">const</span> 
+                                    <span class="variable">developer</span> = {
+                                </span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">2</span>
+                                <span class="code-text">
+                                    &nbsp;&nbsp;<span class="property">name</span>: 
+                                    <span class="string">'Chaitanya Dusane'</span>,
+                                </span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">3</span>
+                                <span class="code-text">
+                                    &nbsp;&nbsp;<span class="property">skills</span>: [
+                                    <span class="string">'Python'</span>, 
+                                    <span class="string">'Node.js'</span>],
+                                </span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">4</span>
+                                <span class="code-text">
+                                    &nbsp;&nbsp;<span class="property">passion</span>: 
+                                    <span class="string">'Creating Amazing Real-World Project'</span>,
+                                </span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">5</span>
+                                <span class="code-text">
+                                    &nbsp;&nbsp;<span class="method">build</span>() {
+                                </span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">6</span>
+                                <span class="code-text">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> 
+                                    <span class="string">'Awesome Projects'</span>;
+                                </span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">7</span>
+                                <span class="code-text">
+                                    &nbsp;&nbsp;}
+                                </span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">8</span>
+                                <span class="code-text">};</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Floating Tech Icons -->
+                    <div class="tech-icons">
+                        <div class="tech-icon tech-icon-1">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div class="tech-icon tech-icon-2">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <div class="tech-icon tech-icon-3">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <div class="tech-icon tech-icon-4">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="tech-icon tech-icon-5">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <div class="tech-icon tech-icon-6">
+                            <i class="fab fa-docker"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+                <span class="scroll-text">Scroll to explore</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title reveal-text">🧑 About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="profile-container">
+                        <div class="profile-glass-bg"></div>
+                        <img src="ch.jpg" alt="John Doe Profile Picture" class="profile-img">
+                        <div class="profile-border"></div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3 class="slide-in-right">Hello! I'm Chaitanya Dusane</h3>
+                    <p class="tagline slide-in-right">Passionate Full Stack Developer</p>
+                    <p class="slide-in-right">passionate Full Stack Developer and Computer Engineering student currently pursuing my B.Tech from SVKM’s Institute of Technology. I enjoy building real-world web applications using technologies like React, Node.js, Django, MySQL, and MongoDB. Through multiple internships and hands-on projects, I've developed a strong understanding of both frontend and backend development, always aiming to turn ideas into functional and user-friendly solutions.</p>
+                    <p class="slide-in-right">💡 Some of my key work includes an AI Text Summarizer, a LinkedIn-inspired professional networking platform, and an IoT-based Smart Hydroponic System powered by Machine Learning. I'm always curious to learn more — from APIs to AI — and love engaging with the tech community through workshops, hackathons, and open source contributions.</p>
+                    <div class="about-stats">
+                        <div class="stat counter-3d" data-target="20">
+                            <h4>0+</h4>
+                            <p>Projects Completed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title reveal-text">💼 Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card card-3d">
+                    <div class="project-image">
+                        <img src="text1.png" alt="E-commerce Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link-3d"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link-3d"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI Text Summarizer app </h3>
+                        <p> A powerful tool that condenses lengthy text documents into concise summaries, enabling users to extract key information 
+quikly and efficiently </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Postman</span>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card card-3d">
+                    <div class="project-image">
+                        <img src="paint.png" alt="Task Management App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link-3d"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link-3d"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3> Panting Point </h3>
+                        <p>•Interactive platform for showcasing and purchasing art. <br>
+• Designed for intuitive browsing and seamless UX. 
+</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">Java Script</span>
+                            <span class="tech-tag">PHP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card card-3d">
+                    <div class="project-image">
+                        <img src="alumini.png" alt="Weather App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link-3d"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link-3d"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Legacy Architect</h3>
+                        <p>• Created a platform that bridges alumni and current students, fostering collaboration and real- world opportunities for growth and innovation. </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card card-3d">
+                    <div class="project-image">
+                        <img src="vistral.png" alt="Social Media Dashboard">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link-3d"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link-3d"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Vistral</h3>
+                        <p>• Shortened long-form videos by 75% while preserving clarity. <br>• Designed to reduce video watching time with key content retained.  </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">NLP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card card-3d">
+                    <div class="project-image">
+                        <img src="linkdenclone.png" alt="Blog Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link-3d"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link-3d"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Connection Web</h3>
+                        <p>• Developed a LinkedIn clone that integrates software engineering ethics and clearly defined roles, creating a professional networking platform with a strong ethical fondation. </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">REACT</span>
+                            <span class="tech-tag">JAVA</span>
+                            <span class="tech-tag">MySQL </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card card-3d">
+                    <div class="project-image">
+                        <img src="hypo.png" alt="Fitness Tracker">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link-3d"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link-3d"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>HypoSensePredict</h3>
+                        <p>•  Designed a Smart Hydroponic System using ESP32, integrating sensors to monitor temperature, humidity, TDS, and pH, with realtime data via MQTT and HiveMQ.<br>
+                       • Implemented Machine Learning models to predict crop yield weight and estimate optimal harvesting time for precision agriculture.  </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">MQTT</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">Flask</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title reveal-text">🛠️ Skills</h2>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3>Frontend</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item skill-3d" data-skill="95">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <span>HTML5</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item skill-3d" data-skill="90">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <span>CSS3</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item skill-3d" data-skill="88">
+                            <div class="skill-icon">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <span>JavaScript</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item skill-3d" data-skill="92">
+                            <div class="skill-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <span>React</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="92"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item skill-3d" data-skill="85">
+                            <div class="skill-icon">
+                                <i class="fab fa-vue"></i>
+                            </div>
+                            <span>Vue.js</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="55"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item skill-3d" data-skill="80">
+                            <div class="skill-icon">
+                                <i class="fab fa-sass"></i>
+                            </div>
+                            <span>Sass</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="50"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Backend</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item skill-3d" data-skill="87">
+                            <div class="skill-icon">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <span>Node.js</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="87"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item skill-3d" data-skill="82">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <span>Python</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="82"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item skill-3d" data-skill="78">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <span>MongoDB</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="78"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item skill-3d" data-skill="75">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <span>MySQL</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item skill-3d" data-skill="70">
+                            <div class="skill-icon">
+                                <i class="fab fa-aws"></i>
+                            </div>
+                            <span>AWS</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="30"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item skill-3d" data-skill="73">
+                            <div class="skill-icon">
+                                <i class="fab fa-docker"></i>
+                            </div>
+                            <span>Docker</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="63"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Tools & Others</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item skill-3d" data-skill="95">
+                            <div class="skill-icon">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <span>Git</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item skill-3d" data-skill="90">
+                            <div class="skill-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <span>GitHub</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item skill-3d" data-skill="88">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <span>VS Code</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item skill-3d" data-skill="85">
+                            <div class="skill-icon">
+                                <i class="fab fa-figma"></i>
+                            </div>
+                            <span>Figma</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item skill-3d" data-skill="92">
+                            <div class="skill-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <span>Responsive Design</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="92"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item skill-3d" data-skill="80">
+                            <div class="skill-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <span>Performance</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <h2 class="section-title reveal-text">📜 Resume</h2>
+            <div class="resume-content">
+                <div class="resume-text">
+                    <h3 class="slide-in-left">Download My Resume</h3>
+                    <p class="slide-in-left">Get a detailed overview of my experience, education, and skills in a downloadable PDF format.</p>
+                    <a href="Sample_Resume_with_email_-_2026[1].pdf" class="btn btn-primary btn-3d slide-in-left" download>
+                        <span><i class="fas fa-download"></i> Download Resume (PDF)</span>
+                    </a>
+                </div>
+                <div class="resume-preview">
+                    <div class="resume-mockup resume-3d">
+                        <div class="resume-header"></div>
+                        <div class="resume-lines">
+                            <div class="line long"></div>
+                            <div class="line medium"></div>
+                            <div class="line short"></div>
+                            <div class="line long"></div>
+                            <div class="line medium"></div>
+                            <div class="line long"></div>
+                            <div class="line short"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title reveal-text">📬 Contact</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="slide-in-left">Let's Get In Touch</h3>
+                    <p class="slide-in-left">I'm always open to discussing new opportunities and interesting projects.</p>
+                    
+                    <div class="contact-item slide-in-left">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>dusane7262@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item slide-in-left">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 7385631752</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item slide-in-left">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Maharashtra, India</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links slide-in-left">
+                        <a href="https://www.linkedin.com/in/chaitanya-dusane-119381259 " class="social-link social-3d"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/976333" class="social-link social-3d"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link social-3d"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link social-3d"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form form-3d">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-3d">
+                        <span><i class="fas fa-paper-plane"></i> Send Message</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Chaitanya Dusane. All rights reserved.</p>
+                <p>Built with ❤️ using HTML, CSS & JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
